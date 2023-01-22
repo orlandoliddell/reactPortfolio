@@ -2,22 +2,25 @@ import React, { useState } from "react"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 const Navbar = () => {
-	const [nav, setNav] = useState(false)
+	const [nav, setNav] = useState(true)
 	const handleNav = () => {
 		setNav(!nav)
 	}
 
 	return (
-		<div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+		<div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 ">
 			<h1 className="w-full lg:text-5xl sm:text-3xl sm:py-3 sm:ease-in-out duration-500 text-2xl text-[rgb(212,223,0)] font-bold m-4">
 				PORTFOLIO
 			</h1>
-			<ul className="hidden md:flex">
+			<ul className=" hidden md:flex">
 				<li className="p-4">Home</li>
 				<li className="p-4">About</li>
 				<li className="p-4">Projects</li>
 			</ul>
-			<div onClick={handleNav} className="block md:hidden">
+			<div
+				onClick={handleNav}
+				className="block md:hidden hover:bg-gray-600 hover:ease-in-out duration-500 hover:p-1 hover:rounded-md"
+			>
 				{!nav ? (
 					<AiOutlineClose size={20} />
 				) : (
