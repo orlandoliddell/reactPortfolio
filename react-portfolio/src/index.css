@@ -3,11 +3,5 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(49, 49, 49);
-}
-
-@layer base {
-  button {
-    @apply border border-black rounded-xl px-5 py-1
-  }
+  background-color: #1a1a1a;
 }
