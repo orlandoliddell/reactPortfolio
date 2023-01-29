@@ -19,7 +19,7 @@ const Navbar = () => {
 			</ul>
 			<div
 				onClick={handleNav}
-				className="block md:hidden hover:bg-gray-600 hover:ease-in-out duration-500 hover:p-1 hover:rounded-md"
+				//className="relative md:hidden hover:bg-gray-600 hover:ease-in-out duration-500 hover:p-1 hover:rounded-md"
 			>
 				{!nav ? (
 					<AiOutlineClose size={20} />
